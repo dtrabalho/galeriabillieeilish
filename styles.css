@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #BF0413, #8C041D, #73030D);
+    color: #085A8C;
+}
+
+h1 {
+    text-align: center;
+    color: #085A8C;
+    font-size: 2.5rem; /* Tamanho do título principal */
+}
+
+h2 {
+    color: #085A8C;
+    font-size: 2rem; /* Tamanho dos títulos das seções */
+    margin-top: 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #085A8C;
+}
+
+#section1 {
+    background: linear-gradient(to bottom, #123C73, #060A0D);
+    position: relative;
+    text-align: center;
+}
+
+#section1 h2 {
+    color: #BF0413; /* Cor do título da primeira seção */
+}
+
+#section2 {
+    background: linear-gradient(to bottom, #A67665, #401F1F);
+    position: relative;
+    text-align: center;
+}
+
+#section2 h2 {
+    color: #593939; /* Cor do título da segunda seção */
+}
+
+#section3 {
+    background: linear-gradient(to bottom, #BFB9B8, #252526);
+    position: relative;
+    text-align: center;
+}
+
+#section3 h2 {
+    color: #3C3C40; /* Cor do título da terceira seção */
+}
+
+#section4 {
+    background: linear-gradient(to bottom, #F29F05, #F28705);
+    position: relative;
+    text-align: center;
+}
+
+#section4 h2 {
+    color: #A62103; /* Cor do título da quarta seção */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    margin: 10px 0;
+}
+
+/* Gaveta lateral */
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px; /* Tamanho do texto dos botões */
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.drawer a:hover {
+    background-color: #575757;
+}
+
+.drawer .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Botão de abrir gaveta */
+.openbtn {
+    font-size: 20px; /* Tamanho do texto do botão de menu */
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: block;
+}
